@@ -1,0 +1,385 @@
+/* RESPONSIVIDADE */
+
+/* Para telas menores que 767px */
+@media (max-width: 767px) {
+
+    /* IMAGENS PARA CADA BANNER */
+    .banner:nth-child(1)::before {
+        background-image: url('../img/Serviços/Reparos/banner\ reparos\ \(Responsivo\).webp');
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .banner:nth-child(2)::before {
+        background-image: url('../img/Serviços/Eletrica/banner\ eletrica\ \(Responsivo\).webp');
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .banner:nth-child(3)::before {
+        background-image: url('../img/Serviços/Hidraulica/banner\ hidraulica\ \(Responsivo\).webp');
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .banner:nth-child(4)::before {
+        background-image: url('../img/Serviços/Alvenaria/banner\ alvenaria\ \(Responsivo\).webp');
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .slider {
+        width: 400%;
+    }
+
+    /*POSICIONAMENTO DAS SETAS DO SLIDER*/
+    .slider-arrow {
+        position: absolute;
+        top: 49% !important;
+        transform: translateY(-50%);
+    }
+
+
+    /*FRASE DESTAQUE*/
+    .frase-destaque {
+        font-size: 1.3rem !important;
+        margin-top: 50px !important;
+    }
+
+
+    .servicos-index h2 {
+        text-align: center;
+        font-size: 1.3rem;
+
+    }
+
+    .pesquisa {
+        width: 100%;
+    }
+
+    /*BANNERS DAS PÁGINAS INDIVIDUAIS*/
+    .banner-reparos {
+        background-image: url('../img/Serviços/Reparos//banner\ reparos\ \(Responsivo\).webp');
+        height: 225px !important;
+        background-size: contain !important;
+        background-repeat: no-repeat;
+    }
+
+    .banner-eletrica {
+        background-image: url('../img/Serviços/Eletrica/banner\ eletrica\ \(Responsivo\).webp');
+        height: 225px !important;
+        background-size: contain !important;
+        background-repeat: no-repeat;
+
+    }
+
+    .banner-hidraulica {
+        background-image: url('../img/Serviços/Hidraulica/banner\ hidraulica\ \(Responsivo\).webp');
+        height: 225px !important;
+        background-size: contain !important;
+        background-repeat: no-repeat;
+    }
+
+    .banner-alvenaria {
+        background-image: url('../img/Serviços/Alvenaria/banner\ alvenaria\ \(Responsivo\).webp');
+        height: 225px !important;
+        background-size: contain !important;
+        background-repeat: no-repeat;
+    }
+
+
+}
+
+/* Para telas de 768px até 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+        font-size: 2rem;
+    }
+
+
+    .brands-carousel {
+        padding: 20px 0;
+    }
+
+    .brands-carousel h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .brand-item {
+        min-width: 150px;
+        padding: 10px;
+    }
+
+    .brand-item img {
+        max-width: 100px;
+    }
+
+    .pesquisa {
+        width: 100%;
+    }
+
+
+    /* IMAGENS PARA CADA BANNER */
+    .banner:nth-child(1)::before {
+        background-image: url('../img/Serviços/Reparos/banner\ reparos\ \(Responsivo\).webp');
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .banner:nth-child(2)::before {
+        background-image: url('../img/Serviços/Eletrica/banner\ eletrica\ \(Responsivo\).webp');
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .banner:nth-child(3)::before {
+        background-image: url('../img/Serviços/Hidraulica/banner\ hidraulica\ \(Responsivo\).webp');
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .banner:nth-child(4)::before {
+        background-image: url('../img/Serviços/Alvenaria/banner\ alvenaria\ \(Responsivo\).webp');
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .slider {
+        width: 400%;
+    }
+
+    /*POSICIONAMENTO DAS SETAS DO SLIDER*/
+    .slider-arrow {
+        position: absolute;
+        top: 42%;
+        transform: translateY(-50%);
+    }
+
+
+    /*FRASE DESTAQUE*/
+    .frase-destaque {
+        font-size: 2rem;
+        padding: 0 20px;
+
+    }
+
+    .pesquisa {
+        width: 100%;
+    }
+
+    /*BANNERS DAS PÁGINAS INDIVIDUAIS*/
+    .banner-reparos {
+        background-image: url('../img/Serviços/Reparos/banner\ reparos\ \(Responsivo\).webp');
+        height: 300px !important;
+        background-size: contain !important;
+        background-repeat: no-repeat;
+
+    }
+
+    .banner-eletrica {
+        background-image: url('../img/Serviços/Eletrica/banner\ eletrica\ \(Responsivo\).webp');
+        height: 300px !important;
+        background-size: contain !important;
+        background-repeat: no-repeat;
+
+    }
+
+    .banner-hidraulica {
+        background-image: url('../img/Serviços/Hidraulica/banner\ hidraulica\ \(Responsivo\).webp');
+        height: 300px !important;
+        background-size: contain !important;
+        background-repeat: no-repeat;
+    }
+
+    .banner-alvenaria {
+        background-image: url('../img/Serviços/Alvenaria/banner\ alvenaria\ \(Responsivo\).webp');
+        height: 300px !important;
+        background-size: contain !important;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Para telas menores ou iguais a 991px */
+@media (max-width: 991px) {
+
+
+
+    /* Ajustes para tablets */
+    .pesquisa {
+        width: 100%;
+    }
+
+
+    /* IMAGENS PARA CADA BANNER */
+    .banner:nth-child(1)::before {
+        background-image: url('../img/Serviços/Reparos/banner\ reparos\ \(Responsivo\).webp');
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .banner:nth-child(2)::before {
+        background-image: url('../img/Serviços/Eletrica/banner\ eletrica\ \(Responsivo\).webp');
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .banner:nth-child(3)::before {
+        background-image: url('../img/Serviços/Hidraulica/banner\ hidraulica\ \(Responsivo\).webp');
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .banner:nth-child(4)::before {
+        background-image: url('../img/Serviços/Alvenaria/banner\ alvenaria\ \(Responsivo\).webp');
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .slider {
+        width: 400%;
+    }
+
+    /*POSICIONAMENTO DAS SETAS DO SLIDER*/
+    .slider-arrow {
+        position: absolute;
+        top: 42%;
+        transform: translateY(-50%);
+    }
+
+
+    /*FRASE DESTAQUE*/
+    .frase-destaque {
+        font-size: 2rem;
+        padding: 0 20px;
+
+    }
+
+    .pesquisa {
+        width: 100%;
+    }
+
+
+
+
+}
+
+/* Para telas menores ou iguais a 768px */
+@media (max-width: 768px) {
+
+    /* MENU MOBILE */
+    .menu {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--color9-black);
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    /* SLIDES */
+    .banner h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .slider-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    /*TEXTO DE SERVICOS*/
+    .text-servicos {
+        padding: 0;
+    }
+
+    .pesquisa {
+        width: 100%;
+    }
+
+    .frase-destaque {
+        position: relative;
+        bottom: 70px;
+    }
+}

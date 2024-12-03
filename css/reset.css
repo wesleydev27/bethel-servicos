@@ -1,0 +1,332 @@
+  /*RESET*/
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: poppins, sans-serif;
+      font-weight: 400;
+  }
+
+  /* BARRA DE ROLAGEM */
+  ::-webkit-scrollbar {
+      width: 24px;
+      height: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 10px;
+      border: 3px solid #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+      background-color: #555;
+  }
+
+  ::-webkit-scrollbar-track {
+      background-color: #f1f1f1;
+      border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-track:hover {
+      background-color: #e0e0e0;
+  }
+
+  /* Para Firefox */
+  html {
+      scrollbar-color: var(--color7-verdew) #f1f1f1;
+      scrollbar-width: thin;
+
+  }
+
+  /*FIM DA BARRA DE ROLAGEM*/
+
+  /*PALETA DE CORES*/
+  :root {
+      --color1-blue: #003398;
+      --color2-white: #ffffff;
+      --color3-orange: #fa6502;
+      --color4-green: #3caa0e;
+      --color5-black: #2c3e50;
+      --color6-cinza: #7f8c8d;
+      --color7-verdew: #25d366;
+      --color8-verde: #479b53;
+      --color9-black: #000000;
+      --color-cinzaclaro: #f7f7f7;
+  }
+
+  /*CORPO DO SITE*/
+  body {
+      background: var(--color-cinzaclaro);
+      color: var(--color5-black);
+  }
+
+  /*HEADER CABEÇALHO*/
+  header {
+      background-color: var(--color9-black);
+      height: 4.5rem;
+      padding: 0.1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /*MENU*/
+  nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      padding: 0.2rem;
+      margin: 0 auto;
+
+  }
+
+  /*LOGOTIPO*/
+  .logo img {
+      width: 156px;
+      cursor: pointer;
+  }
+
+  /*MENU*/
+  .menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+  }
+
+  .menu a {
+      color: var(--color8-verde);
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.3s;
+  }
+
+  .menu a:hover {
+      color: var(--color2-white);
+  }
+
+  /*WHATSAPP MENU HEADER*/
+  .whatsapp-menu {
+      background-color: var(--color7-verdew);
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      opacity: 0.9;
+  }
+
+  .whatsapp-menu a {
+      font-size: 0.9rem;
+      color: var(--color2-white);
+      text-decoration: none;
+  }
+
+  .whatsapp-menu i {
+      margin-right: 0.5rem;
+      font-size: 1rem;
+  }
+
+  .whatsapp-menu:hover {
+      opacity: 1;
+  }
+
+
+
+  /**MENU MOBILE*/
+  .menu-mobile {
+      display: none;
+      cursor: pointer;
+      color: var(--color8-verde);
+      font-size: 1.8rem;
+      padding: 0 1rem;
+  }
+
+
+  /*SLIDES */
+  .slider-container {
+      position: relative;
+      width: 100%;
+      height: 40vh;
+      overflow: hidden;
+  }
+
+  .slider {
+      display: flex;
+      width: 400%;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+  }
+
+  /*CONTROLES DE SLIDES*/
+  .slider-arrow {
+      position: absolute;
+      top: 40%;
+      transform: translateY(-30%);
+      width: 40px;
+      height: 40px;
+      background-color: var(--color7-verdew);
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color2-white);
+      font-size: 1.5rem;
+      opacity: 0.9;
+      z-index: 10;
+  }
+
+  .slider-arrow:hover {
+      opacity: 1;
+  }
+
+  .slider-arrow.prev {
+      left: 1.2rem;
+  }
+
+  .slider-arrow.next {
+      right: 1.2rem;
+  }
+
+  .banner {
+      position: relative;
+      height: 60vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+  }
+
+  .banner.active {
+      opacity: 1;
+  }
+
+  /* Estilo para as imagens de fundo */
+  .banner::before {
+      content: '';
+      position: absolute;
+      top: 64px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: -1;
+  }
+
+  /* IMAGENS PARA CADA BANNER */
+  .banner:nth-child(1)::before {
+      background-image: url('../img/Serviços/Reparos/banner\ Reparos.webp');
+  }
+
+  .banner:nth-child(2)::before {
+      background-image: url('../img/Serviços/Eletrica/banner\ eletrica.webp');
+  }
+
+  .banner:nth-child(3)::before {
+      background-image: url('../img/Serviços/Hidraulica/banner\ Hidraulica.webp');
+  }
+
+  .banner:nth-child(4)::before {
+      background-image: url('../img/Serviços/Alvenaria/banner\ Alvenaria.webp');
+
+  }
+
+
+  /*BOTÃO VOLTE AO TOPO*/
+  #backToTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--color8-verde);
+      color: var(--color2-white);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      opacity: 0;
+      z-index: 1000;
+      border: solid 2px var(--color7-verdew)
+  }
+
+  #backToTopBtn.visible {
+      display: block;
+      opacity: 1;
+  }
+
+  #backToTopBtn:hover {
+      opacity: 0.9;
+
+  }
+
+  #backToTopBtn::after {
+      content: "";
+      font-size: 24px;
+      line-height: 50px;
+      display: block;
+      text-align: center;
+  }
+
+  /*FOOTER RODAPÉ*/
+  footer {
+      background-color: var(--color8-verde);
+      padding: 1rem;
+      text-align: center;
+      color: var(--color2-white);
+  }
+
+
+  /* Botão WhatsApp */
+  .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
+  }
+
+  .whatsapp-btn i {
+      font-size: 30px;
+  }
+
+  /* Efeito de Pulsar */
+  @keyframes pulse {
+      0% {
+          transform: scale(1);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      50% {
+          transform: scale(1.1);
+          box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      100% {
+          transform: scale(1);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+  }
